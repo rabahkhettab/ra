@@ -1,0 +1,28 @@
+<app-header [title]="'Composants avec binding'"></app-header>
+<app-carte2 [title]="'Angular'" [domain]="'Software Engineering'" [description]="description">
+    
+    
+</app-carte2>
+<app-carte2 [title]="'React'" [domain]="'Software Engineering'" [description]="'Nothing to say'">
+    
+    
+</app-carte2>
+<app-carte2 [title]="'RABAH'" [domain]="'STUDENT'" [description]="'TALL MAN'">
+
+    
+</app-carte2>
+<h1>{{description}}</h1>
+<h1>{{curentdate| date:"dd/mm/yyyy"}}</h1>
+<ul>
+    <li><a href="">home</a></li>
+    <li><a href="https://web.facebook.com/groups/2305505152800178/?ref=bookmarks">exemple3</a></li>
+    <li><a href="">exemple4</a></li>
+</ul>
+<input type="text" [(ngModel)]="description">
+<input type="button" value="click here" (click)="myfunction()">
+<select (change)="change()">
+
+    <option *ngFor="let color of colors">
+        {{color|uppercase}}
+    </option>
+</select>
